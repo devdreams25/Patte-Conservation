@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Patte Conservation</title>
+    <link rel="stylesheet" href="about.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Patte Conservation Logo" />
+          <h2>Patte Conservation</h2>
+        </a>
+      </div>
+
+      <!--Sidebar icon for mobile view-->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <!--Sidebar for mobile-->
+      <div class="nav-links sidebar" id="sidebar">
+        <div class="close-btn" id="closeBtn">&times;</div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </div>
+
+      <!--Links-->
+      <nav class="nav-links desktop-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </header>
+
+    <div class="hero-headline">
+      <h1>About Patte Conservation</h1>
+    </div>
+
+    <section class="about-section">
+      <div class="about-headline">
+        <h1>Our Purpose</h1>
+        <hr />
+      </div>
+      <div class="about-content">
+        <div class="about-context">
+          <p>
+            The purpose of Patte Conservation is to improve the quality of life
+            of its community members through undertaking developmental projects
+            and programs on environmental conservation initiatives.
+          </p>
+          <p>
+            We intend to establish a Locally Managed Marine Area (LMMA) to
+            foster a sustainable and equitable marine ecosystem that benefits
+            both the environment and local communities.
+          </p>
+          <p>
+            Through collaborative management by the community of Pate, Shanga
+            Ishakani and Shanga Rubu, we preserve coral reef health, promote
+            biodiversity, and support sustainable livelihoods.
+          </p>
+          <img src="purpose_section_img.jpg" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Food Security</h3>
+          <p>
+            Contributing to sustainable food sources through responsible marine
+            resource management
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-users"></i>
+          <h3>Economic Development</h3>
+          <p>
+            Supporting sustainable livelihoods and community well-being through
+            eco-tourism
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-water"></i>
+          <h3>Marine Conservation</h3>
+          <p>Preserving coral reef health and promoting marine biodiversity</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-fish"></i>
+          <h3>Sustainable Resources</h3>
+          <p>
+            Ensuring long-term viability of marine resources for future
+            generations
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-contents">
+        <div class="footer-content">
+          <div class="footer-context">
+            <div class="footer-logo">
+              <img src="logo.png" />
+              <h2>Patte Conservation</h2>
+            </div>
+            <p>
+              Iweni Locally Managed Marine Area - Fostering sustainable and
+              equitable marine ecosystems that benefit both the environment and
+              local communities through collaborative management by the
+              communities of Pate, Shanga Ishakani and Shanga Rubu.
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h2>Quick Links:</h2>
+            <a href="about.html">About Us</a>
+            <a href="project.html">Our Projects</a>
+            <a href="fees.html">Conservation Fees</a>
+            <a href="donate.html">Donations</a>
+            <a href="partner.html">Partners</a>
+            <a href="team.html">Our Team</a>
+          </div>
+
+          <div class="footer-contactInfo">
+            <h2>Contact Info:</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Pate Island, Lamu County
+              Kenya
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+254 XXX XXX XXX</p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>info@patteconservation.org
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-copyright">
+          <p>
+            &copy; 2025 Patte Conservation. All rights reserved. | Iweni Locally
+            Managed Marine Area
+          </p>
+          <p>Supporting sustainable marine conservation since 2010</p>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        ᨒ Protecting our oceans for future generations through community action
+        ᨒ
+      </p>
+    </footer>
+
+    <script>
+      /* For header when the user scrolls down, the background-color appear */
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          // when user scrolls more than 50px
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      /* For sidebar header */
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("closeBtn");
+
+        hamburger.addEventListener("click", () => {
+          sidebar.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+
+        window.addEventListener("click", (e) => {
+          if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+            sidebar.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conservation Fees</title>
+    <link rel="stylesheet" href="fees.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--This is for scanner-->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <!-- This is for Email receipt -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("_5KmyhYCNDR82I3Ft"); // replace with your EmailJS user ID
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Patte Conservation Logo" />
+          <h2>Patte Conservation</h2>
+        </a>
+      </div>
+
+      <!--Sidebar icon for mobile view-->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <!--Sidebar for mobile-->
+      <div class="nav-links sidebar" id="sidebar">
+        <div class="close-btn" id="closeBtn">&times;</div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </div>
+
+      <!--Links-->
+      <nav class="nav-links desktop-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a class="active" href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </header>
+
+    <div class="hero-headline">
+      <h1>Conservation Fees</h1>
+    </div>
+
+    <section class="fees-section">
+      <div class="conservation-headline">
+        <h1>Conservation Fees Structure in the Iweni Conservation Area</h1>
+        <hr />
+        <p>
+          Protecting marine ecosystems through community-driven conservation
+          initiatives
+        </p>
+      </div>
+
+      <div class="categories-fees">
+        <h3>Categories and Charges</h3>
+
+        <div class="fees-table">
+          <table border="1" cellpadding="8" cellspacing="0">
+            <tr
+              style="
+                background: #162d70;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+              "
+            >
+              <td>Kenyan Residents / E.A Citizens</td>
+              <td>Charges</td>
+            </tr>
+
+            <tr>
+              <td>Adult</td>
+              <td class="charge-cell">
+                <span>KES 500</span>
+                <button data-name="Adult" data-amount="KES 500" class="pay-btn">
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Child / Student</td>
+              <td class="charge-cell">
+                <span>KES 300</span>
+                <button
+                  data-name="Child / Student"
+                  data-amount="KES 300"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+
+            <tr style="background: #162d70; color: #fff; font-weight: bold">
+              <td colspan="2">Non-Residents</td>
+            </tr>
+            <tr>
+              <td>Adult</td>
+              <td class="charge-cell">
+                <span>USD 10</span>
+                <button data-name="Adult" data-amount="USD 10" class="pay-btn">
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Child / Student</td>
+              <td class="charge-cell">
+                <span>USD 6</span>
+                <button
+                  data-name="Child / Student"
+                  data-amount="USD 6"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+
+            <tr style="background: #162d70; color: #fff; font-weight: bold">
+              <td>Recreational Diving</td>
+              <td>Fee</td>
+            </tr>
+            <tr>
+              <td>EA Citizen / Kenyan Resident</td>
+              <td class="charge-cell">
+                <span>KES 1,000</span>
+                <button
+                  data-name="EA Citizen / Kenyan Resident"
+                  data-amount="KES 1,000"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Non-Resident</td>
+              <td class="charge-cell">
+                <span>USD 15</span>
+                <button
+                  data-name="Non-Resident"
+                  data-amount="USD 15"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+
+            <tr style="background: #162d70; color: #fff; font-weight: bold">
+              <td colspan="2">Other Activities</td>
+            </tr>
+            <tr>
+              <td>Research</td>
+              <td class="charge-cell">
+                <span>KES 10,000 (plus conservation fees)</span>
+                <button
+                  data-name="Research"
+                  data-amount="KES 10, 000"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Filming (less than 10 crews)</td>
+              <td class="charge-cell">
+                <span>KES 20,000 (plus conservation fees)</span>
+                <button
+                  data-name="Filming (less than 10 crews)"
+                  data-amount="KES 20, 000"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Filming (more than 10 crews)</td>
+              <td class="charge-cell">
+                <span>KES 30,000 (plus conservation fees)</span>
+                <button
+                  data-name="Filming (more than 10 crews)"
+                  data-amount="KES 30, 000"
+                  class="pay-btn"
+                >
+                  Pay Now
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="fees-details">
+        <ul>
+          <li>
+            <strong>Research: </strong>Researchers must pay a flat fee of KES
+            10,000 and also adhere to the standard conservation fees. They are
+            required to submit preliminary findings within one day of concluding
+            their research and provide a full report within three months.
+          </li>
+          <li>
+            <strong>Filming: </strong>Filming crews will pay a fee based on the
+            number of crew members. The fee includes a base rate and the
+            standard conservation fees determined by the management committee as
+            illustrated from the table above.
+          </li>
+          <li>
+            <strong>Annual Review: </strong>The conservation fees will be
+            reviewed annually by the management committee to ensure they remain
+            appropriate and sustainable.
+          </li>
+        </ul>
+      </div>
+
+      <!--Pay Conservation Fees-->
+      <div id="paymentModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <h2 id="feeTitle">Pay Conservation Fee</h2>
+          <p id="feeSubtitle"></p>
+
+          <!-- PAYMENT METHOD SELECTOR -->
+          <div class="method-buttons">
+            <div class="method active" data-method="card">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Card</span>
+            </div>
+
+            <div class="method" data-method="mpesa">
+              <i class="fa-solid fa-mobile"></i>
+              <span>M-Pesa</span>
+            </div>
+
+            <div class="method" data-method="crypto">
+              <i class="fa-brands fa-bitcoin"></i>
+              <span>Crypto</span>
+            </div>
+          </div>
+
+          <!-- CARD FORM -->
+          <div id="card" class="payment-form show">
+            <div class="form-flex">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="your@email.com" />
+              </div>
+
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" placeholder="+254XXXXXXXXX" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Card Number</label>
+              <input type="text" placeholder="1234 5678 9012 3456" />
+            </div>
+
+            <div class="form-flex">
+              <div class="form-row">
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM/YY" />
+              </div>
+              <div class="form-row">
+                <label>CVV</label>
+                <input type="text" placeholder="123" />
+              </div>
+            </div>
+          </div>
+
+          <!-- MPESA FORM -->
+          <div id="mpesa" class="payment-form">
+            <form
+              id="mpesaForm"
+              method="POST"
+              action="mpesaapi/stkpush.php"
+            >
+              <!--User Email-->
+              <div class="form-flex">
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- USER PHONE -->
+              <div class="form-group">
+                <label>M-Pesa Phone Number</label>
+                <input
+                  id="mpesaPhone"
+                  type="text"
+                  name="phone"
+                  placeholder="07XXXXXXXX"
+                  required
+                />
+                <p>You will receive an STK push to authorize the payment.</p>
+              </div>
+              <input type="hidden" name="amount" id="mpesaAmount" />
+              <input type="hidden" name="description" id="mpesaDescription" />
+
+              <button id="payBtn" type="button" class="pay-btn" onclick="payNow()">
+                Pay via M-Pesa
+              </button>
+            </form>
+          </div>
+
+          <!-- CRYPTO FORM -->
+          <div id="crypto" class="payment-form">
+            <div class="form-group">
+              <label>Your Wallet Address</label>
+              <input type="text" placeholder="Enter wallet address" />
+              <p>
+                We accept Bitcoin, Ethereum, and other major cryptocurrencies
+              </p>
+            </div>
+
+            <div class="form-group">
+              <button
+                onclick="document.getElementById('walletModal').style.display='flex'"
+              >
+                Open Crypto Payment
+              </button>
+            </div>
+          </div>
+
+          <div class="payment-summary">
+            <label class="payment-title">Payment Summary</label>
+
+            <div class="amount-row">
+              <span>Amount:</span>
+              <span id="feeAmount"></span>
+            </div>
+          </div>
+
+          <button class="payBtn" id="completePayment">Complete Payment</button>
+        </div>
+      </div>
+
+      <!-- Wallet Modal -->
+      <div id="walletModal" class="modal-wallet">
+        <div class="wallet-content">
+          <span class="wallet-close" onclick="walletModal.style.display='none'"
+            >&times;</span
+          >
+
+          <div class="wallet-grid">
+            <!-- Bitcoin -->
+            <div class="wallets">
+              <h2>Bitcoin Wallet Address</h2>
+              <p class="walletText">
+                bc1qpfp72hg2p8h4qfpm5ghf8kap75l36q4hgyz3j8
+              </p>
+
+              <button class="copyWalletBtn">Copy Address</button>
+              <button class="viewQRBtn" data-qr="bitcoin_qr.png">
+                View QR
+              </button>
+              <button class="downloadQRBtn" data-qr="bitcoin_qr.png">
+                Download QR
+              </button>
+            </div>
+
+            <!-- Ethereum -->
+            <div class="wallets">
+              <h2>Ethereum Wallet Address</h2>
+              <p class="walletText">
+                0xBdd4e533ca96Feb2b6a5abbd8441BE0fD8d1f13E
+              </p>
+
+              <button class="copyWalletBtn">Copy Address</button>
+              <button class="viewQRBtn" data-qr="ethereum_qr.png">
+                View QR
+              </button>
+              <button class="downloadQRBtn" data-qr="ethereum_qr.png">
+                Download QR
+              </button>
+            </div>
+
+            <!-- Tron (USDT) -->
+            <div class="wallets">
+              <h2>USDT (Tron)</h2>
+              <p class="walletText">TTq9wQEr1pHx5rwXifQA9yHhacUoS1hX95</p>
+
+              <button class="copyWalletBtn">Copy Address</button>
+              <button class="viewQRBtn" data-qr="usdt_qr.png">View QR</button>
+              <button class="downloadQRBtn" data-qr="usdt_qr.png">
+                Download QR
+              </button>
+            </div>
+
+            <!-- Tron (USDC) -->
+            <div class="wallets">
+              <h2>USDC (Tron )</h2>
+              <p class="walletText">TTq9wQEr1pHx5rwXifQA9yHhacUoS1hX95</p>
+
+              <button class="copyWalletBtn">Copy Address</button>
+              <button class="viewQRBtn" data-qr="usdc_qr.png">View QR</button>
+              <button class="downloadQRBtn" data-qr="usdc_qr.png">
+                Download QR
+              </button>
+            </div>
+
+            <!-- Solana Wallet Address -->
+            <div class="wallets">
+              <h2>Solana Wallet Address</h2>
+              <p class="walletText">
+                5CPL5Js5Lk8uet7fCTwXFmeqnjqAXZuhyWAcHWADgbjj
+              </p>
+
+              <button class="copyWalletBtn">Copy Address</button>
+              <button class="viewQRBtn" data-qr="solana_qr.png">View QR</button>
+              <button class="downloadQRBtn" data-qr="solana_qr.png">
+                Download QR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QR Code Modal -->
+      <div id="qrModal" class="modal-wallet">
+        <div class="qr-content">
+          <span class="qr-close" onclick="qrModal.style.display='none'"
+            >&times;</span
+          >
+
+          <h3>Scan QR Code</h3>
+          <img
+            id="qrImage"
+            src=""
+            width="220"
+            style="display: block; margin: auto"
+          />
+
+          <hr />
+
+          <button id="startScanner">Scan Using Camera</button>
+
+          <div id="reader" style="width: 260px; display: none"></div>
+          <p id="scanResult"></p>
+        </div>
+      </div>
+
+      <div class="conservation-guidelines">
+        <h2>Conservation Guidelines</h2>
+        <div class="lists">
+          <div class="list">
+            <p>Marine Protected Area Rules</p>
+            <ul>
+              <li>No fishing or collection of marine life</li>
+              <li>Do not touch or stand on coral reefs</li>
+              <li>Use reef-safe sunscreen only</li>
+              <li>Follow designated swimming/diving areas</li>
+              <li>Maintain respectful distance from marine life</li>
+              <li>No littering - take only photos, leave only bubbles</li>
+            </ul>
+          </div>
+          <div class="list">
+            <p>What to Bring</p>
+            <ul>
+              <li>Valid identification document</li>
+              <li>Payment receipt (show to rangers)</li>
+              <li>Reef-safe sunscreen</li>
+              <li>Towel and change of clothes</li>
+              <li>Waterproof camera (optional)</li>
+              <li>Drinking water</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Payment Confirmation-->
+      <div class="payment-confirmation">
+        <h2>Payment Confirmation</h2>
+        <p>
+          After successful payment, you'll receive a digital receipt that must
+          be shown to rangers when accessing the marine protected areas. This
+          system helps us track conservation impact and ensure sustainable
+          tourism practices.
+        </p>
+        <div class="payment-method">
+          <div class="card-method">
+            <i class="fa-regular fa-credit-card"></i>
+            <p>Card Payments</p>
+          </div>
+          <div class="card-method">
+            <i class="fa-solid fa-mobile"></i>
+            <p>M-Pesa</p>
+          </div>
+          <div class="card-method">
+            <i class="fa-solid fa-bitcoin-sign"></i>
+            <p>Crypto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-contents">
+        <div class="footer-content">
+          <div class="footer-context">
+            <div class="footer-logo">
+              <img src="logo.png" />
+              <h2>Patte Conservation</h2>
+            </div>
+            <p>
+              Iweni Locally Managed Marine Area - Fostering sustainable and
+              equitable marine ecosystems that benefit both the environment and
+              local communities through collaborative management by the
+              communities of Pate, Shanga Ishakani and Shanga Rubu.
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h2>Quick Links:</h2>
+            <a href="about.html">About Us</a>
+            <a href="project.html">Our Projects</a>
+            <a href="fees.html">Conservation Fees</a>
+            <a href="donate.html">Donations</a>
+            <a href="partner.html">Partners</a>
+            <a href="team.html">Our Team</a>
+          </div>
+
+          <div class="footer-contactInfo">
+            <h2>Contact Info:</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Pate Island, Lamu County
+              Kenya
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+254 XXX XXX XXX</p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>info@patteconservation.org
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-copyright">
+          <p>
+            &copy; 2025 Patte Conservation. All rights reserved. | Iweni Locally
+            Managed Marine Area
+          </p>
+          <p>Supporting sustainable marine conservation since 2010</p>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        ᨒ Protecting our oceans for future generations through community action
+        ᨒ
+      </p>
+    </footer>
+
+    <script src="fees.js"></script>
+  </body>
+</html>

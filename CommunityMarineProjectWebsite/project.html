@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Patte Conservation</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Patte Conservation Logo" />
+          <h2>Patte Conservation</h2>
+        </a>
+      </div>
+
+      <!--Sidebar icon for mobile view-->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <!--Sidebar for mobile-->
+      <div class="nav-links sidebar" id="sidebar">
+        <div class="close-btn" id="closeBtn">&times;</div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </div>
+
+      <!--Links-->
+      <nav class="nav-links desktop-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="project.html">Projects</a>
+        <a href="fees.html">Conservation Fees</a>
+        <a href="donate.html">Donate</a>
+        <a href="partner.html">Partners</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </header>
+
+    <div class="hero-headline">
+      <h1>Projects</h1>
+    </div>
+
+    <section class="lmma-section">
+      <div class="lmma-content">
+        <h1>Iweni Locally Managed Marine Area</h1>
+        <p>
+          The LMMA project focuses on protecting and restoring the marine
+          ecosystem surrounding Patte Island through community-led management.
+          The initiative aims to improve fisheries, enhance biodiversity, and
+          secure sustainable livelihoods for the local communities.
+        </p>
+        <button class="view-map-btn" id="openMapBtn">
+          <i class="fa-regular fa-eye"></i> View Map
+        </button>
+
+        <!-- Modal -->
+        <div id="mapModal" class="modal">
+          <span class="close" id="closeMapBtn">&times;</span>
+          <img src="LMMA Map.jpg" class="modal-content" />
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="project-headline">
+        <h1>Our Project</h1>
+        <hr />
+        <p>
+          Protecting marine ecosystems through community-driven conservation
+          initiatives
+        </p>
+      </div>
+
+      <div class="project-content">
+        <h2>Ongoing Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Coral Restoration</h3>
+            <img src="project_1.jpg" alt="Coral Restoration" />
+            <p>
+              In partnership with The Ocean Trust Organization, our community
+              actively restores coral reefs through hands-on restoration
+              activities, sharing skills, knowledge, and tools.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Awareness Campaigns</h3>
+            <img src="project_2.jpg" alt="Awareness Campaigns" />
+            <p>
+              Educational campaigns focused on environmental conservation,
+              sustainable fishing practices, and the importance of marine
+              ecosystem protection.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Eco-Tourism</h3>
+            <img src="project_3.png" alt="Eco-Tourism" />
+            <p>
+              Sustainable eco-tourism activities including snorkeling, diving,
+              and sea adventures that support local communities while protecting
+              marine environments.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--Mangrove Restoration Section-->
+      <div class="mangrove-section">
+        <h1>Mangrove Restoration (In Collaboration with PRATI CBO)</h1>
+
+        <div class="mangrove-img">
+          <div class="img-1">
+            <img src="mangrove_img1.jpg">
+          </div>
+          <div class="img-2">
+            <img src="mangrove_img2.png">
+          </div>
+        </div>
+
+        <div class="mangrove-content">
+          <h3>Overview</h3>
+          <p>
+            Patte Conservation CBO is working together with PRATI CBO to restore
+            and protect the mangrove forests around Patte Island. Mangroves are
+            essential nursery habitats for fish, natural coastal protection
+            barriers, and critical carbon sinks that support climate resilience
+            for the community.
+          </p>
+          <p>
+            This collaborative effort strengthens community-led conservation by
+            pooling knowledge, volunteers, and resources from both
+            organizations.
+          </p>
+        </div>
+      </div>
+
+      <!--Future Plans-->
+      <div class="plans-content">
+        <h2>Future Plans</h2>
+        <div class="plans">
+          <div class="plan">
+            <h3>Marine Life Advocacy</h3>
+            <p>
+              Expanding our advocacy efforts to protect marine life and promote
+              sustainable fishing practices throughout the region.
+            </p>
+            <ul>
+              <li>Policy advocacy for marine protection</li>
+              <li>Community education programs</li>
+              <li>Collaboration with government agencies</li>
+            </ul>
+          </div>
+          <div class="plan planting">
+            <h3>Mangrove & Seaweed Planting</h3>
+            <img
+              src="https://pbs.twimg.com/media/FrXSBaWagAA7NaE?format=jpg&name=large"
+              alt="Mangrove & Seaweed Planting"
+            />
+            <p>
+              Large-scale mangrove restoration and seaweed farming initiatives
+              to strengthen coastal protection and create sustainable income
+              sources for local communities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-contents">
+        <div class="footer-content">
+          <div class="footer-context">
+            <div class="footer-logo">
+              <img src="logo.png" />
+              <h2>Patte Conservation</h2>
+            </div>
+            <p>
+              Iweni Locally Managed Marine Area - Fostering sustainable and
+              equitable marine ecosystems that benefit both the environment and
+              local communities through collaborative management by the
+              communities of Pate, Shanga Ishakani and Shanga Rubu.
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h2>Quick Links:</h2>
+            <a href="about.html">About Us</a>
+            <a href="project.html">Our Projects</a>
+            <a href="fees.html">Conservation Fees</a>
+            <a href="donate.html">Donations</a>
+            <a href="partner.html">Partners</a>
+            <a href="team.html">Our Team</a>
+          </div>
+
+          <div class="footer-contactInfo">
+            <h2>Contact Info:</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Pate Island, Lamu County
+              Kenya
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+254 XXX XXX XXX</p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>info@patteconservation.org
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-copyright">
+          <p>
+            &copy; 2025 Patte Conservation. All rights reserved. | Iweni Locally
+            Managed Marine Area
+          </p>
+          <p>Supporting sustainable marine conservation since 2010</p>
+        </div>
+      </div>
+
+      <p class="footer-text">
+        ᨒ Protecting our oceans for future generations through community action
+        ᨒ
+      </p>
+    </footer>
+
+    <script>
+      /* For header when the user scrolls down, the background-color appear */
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          // when user scrolls more than 50px
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      /* For sidebar header */
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger");
+        const sidebar = document.getElementById("sidebar");
+        const closeBtn = document.getElementById("closeBtn");
+
+        hamburger.addEventListener("click", () => {
+          sidebar.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+
+        window.addEventListener("click", (e) => {
+          if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+            sidebar.classList.remove("active");
+          }
+        });
+      });
+
+      /* For LMMA Map Animation */
+      const modal = document.getElementById("mapModal");
+      const openBtn = document.getElementById("openMapBtn");
+      const closeBtn = document.getElementById("closeMapBtn");
+
+      // Open modal
+      openBtn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // Close modal
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Close if clicked outside image
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Close on ESC key
+      window.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
